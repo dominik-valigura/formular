@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulačka čtverce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulačka čtverce</h1>
+    <form id="squareForm">
+      <label for="side">Zadej délku strany čtverce (v cm):</label>
+      <input type="number" id="side" name="side" step="any" required>
+      <button type="submit">Vypočítat</button>
+    </form>
+
+    <div id="results">
+      <h2>Výsledky:</h2>
+      <p><strong>Obvod:</strong> <span id="perimeter"></span> cm</p>
+      <p><strong>Obsah:</strong> <span id="area"></span> cm²</p>
+      <p><strong>Úhlopříčka:</strong> <span id="diagonal"></span> cm</p>
+      <p><strong>Poloměr vepsané kružnice:</strong> <span id="inscribedRadius"></span> cm</p>
+      <p><strong>Poloměr opsané kružnice:</strong> <span id="circumscribedRadius"></span> cm</p>
+      <p><a href="https://www.geogebra.org/m/xmrwmxha">Co to je opsaná a vepsaná kružnice?</a></p> 
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
